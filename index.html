@@ -43,13 +43,16 @@
                             <a class="nav-link" href="#minav">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#qs">Quienes Somos</a>
+                            <a class="nav-link" href="#qs" data-toggle="tooltip" data-placement="bottom"
+                                title="bajar hasta ¿Quienes Somos?">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ds">Destacados</a>
+                            <a class="nav-link" href="#ds" data-toggle="tooltip" data-placement="bottom"
+                                title="bajar hasta Destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#cn">Contacto</a>
+                            <a class="nav-link" href="#cn" data-toggle="tooltip" data-placement="bottom"
+                                title="bajar hasta Contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +63,6 @@
         <div class="bg-dark text-dark">
             <div class="container">
                 <!-- quienes somos -->
-                <!-- d-xs-block  -->
                 <div class="row d-none d-sm-block">
                     <div id="qs" class="text-center">
                         <h1 class="text-light py-5">¿Quienes Somos?</h1>
@@ -132,8 +134,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <!-- galery -->
                 <div id="ds" class="text-center">
                     <h1 class="text-light py-5">Destacados</h1>
@@ -331,7 +331,8 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                         </div>
                         <div class="form-group">
-                            <a href="#" class="btn btn-primary">Enviar</a>
+                            <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="right"
+                                title="Una vez completes el formulario, envialo!">Enviar</a>
                         </div>
                     </form>
                 </div>
@@ -379,5 +380,10 @@
     </main>
 
 </body>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </html>
